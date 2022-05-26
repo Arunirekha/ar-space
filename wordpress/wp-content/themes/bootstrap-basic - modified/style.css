@@ -1,0 +1,793 @@
+/*
+Theme Name: Bootstrap Basic modified
+Theme URI: https://rundiz.com
+Author: Vee Winch
+Author URI: 
+Description: Bootstrap v.3 basic theme for developers to build their new theme very fast and easy. You can support theme author by <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9HQE4GVV4KTZE" target="donate">donate</a>. To follow what was changed, please look for <a href="https://github.com/Rundiz-WP/bootstrap-basic" target="commits">commits</a> of this theme at Github or changelog.md file that come with the theme.
+Version: 1.2.1
+Requires PHP: 5.4
+Requires at least: 4.0
+Tested up to: 5.9
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: bootstrap-basic
+Domain Path: /languages/
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+
+This theme built with Twitter Bootstrap v.3. It is basic theme with basic style for build new theme with Bootstrap.
+
+*/
+
+
+
+
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+
+@font-face {
+    font-family: TiroBangla;
+    src: url(fonts/TiroBangla-Regular.ttf);
+}
+
+.mainslider h1 {
+    font-family: "TiroBangla", sans-serif;
+}
+
+
+
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+
+/*
+* 	Theme Main Styles 
+*	
+*/
+
+
+
+*,html{
+margin:0;
+padding:0;
+}
+a {
+	text-decoration:none;
+	color: #3e8ed7;
+}
+
+a:hover {
+	color: #61b7e6;
+}	
+.col-sm-3, .col-sm-9, .col-sm-12{
+padding-right:5px;
+padding-left:5px;
+}
+
+/*----- Main Menu Start------*/
+.menuWrapper{
+width: 100%;
+color:#FFF;
+height: 63px;
+position:fixed;
+top: 0;
+left: 0;
+z-index:999;
+}
+.navbar {
+position: absolute;
+width: 100%;
+top: 0;
+}
+.nav > li > a:hover, .nav > .active > a, .nav > li > a:focus {
+text-decoration: none;
+color:#2eb398;
+background-color: £6792AC;
+}
+.nav > li > a {
+color: #fff;
+font-size: 10px;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+padding-top: 25px;
+padding-left: 11px;
+}
+.nav .open>a, {
+ background-color: none;
+}
+.navbar-toggle .icon-bar {
+background:#2EB398;
+}
+.navbar-toggle {
+border: 1px solid #2EB398;
+}
+.navbar-collapse {
+border-top: 0px;
+box-shadow:none;
+}
+.brandLogo{
+width: 99px;
+height: 90px;
+overflow: hidden;
+margin: 0px auto;
+text-align:center;
+}
+.brandLogo img{
+margin-left: 1px;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+	.navbar-nav{
+	margin-top: 11px;
+	}
+	.navbar-nav li{
+	text-align: center;
+	}
+	.navbar-nav li:nth-child(2){
+	margin-right: 0px;
+	}
+	.navbar-nav li:nth-child(3){
+	margin-left: 0px;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	.navbar-nav{
+	margin-top: 11px;
+	}
+	.navbar-nav li{
+	text-align: center;
+	}
+	.navbar-nav li:nth-child(2){
+	margin-right: 0px;
+	}
+	.navbar-nav li:nth-child(3){
+	margin-left: 0px;
+	}
+	.main-slider .item .itemText {
+     left: 0px;
+	}	
+	.main-slider .item .itemText h1 span {
+	letter-spacing: 50px;
+	}
+ .itemText .col-md-4 {
+	 margin-bottom: 40px;
+    margin-top: 15px;
+}
+	}
+}
+@media (min-width: 768px){
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+	}
+}  
+
+/*----- Main Menu End------*/
+
+
+
+/*----- Slider Start------*/
+.sliderWrapper{
+height: 100%;
+margin:0 auto;
+width: 100%;
+padding-left: 0px;
+padding-right: 0px;
+margin-top: -20px;	
+}
+.hexWrap{
+margin:0;
+padding:0;
+}
+.owl-carousel .owl-wrapper-outer {
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+.owl-theme .owl-controls {
+margin-top: 46px;
+text-align: left;
+margin-left: 16px;
+margin-bottom: 11px;
+padding-bottom: 8px;
+border-bottom: 1px solid #eee;
+margin-right: 10px;
+}
+.owl-theme .owl-controls .owl-page span {
+display: block;
+width: 6px;
+height: 6px;
+margin: 3px 2px;
+opacity: 1;
+border-radius:0px;
+background: none repeat scroll 0% 0% #ddd2c5;
+}
+.owl-theme .owl-controls .active span {
+opacity: 1;
+background: none repeat scroll 0% 0% #8b8784;
+}
+.owl-item .item{
+height:100vh;
+}
+.gap{
+margin-left: 100px;
+}
+.hexItem{
+width:180px;
+height:206px;
+display:inline-block;
+list-style:none;
+margin-right:17px;
+margin-bottom: -40px;
+position:relative;
+}
+.hexItem  a img{
+width:100%;
+height:auto;
+position:absolute;
+z-index: 2;
+vertical-align:top;
+opacity: 1;
+vertical-align: bottom;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+}
+.hexItem strong{
+font-family: 'Maven Pro', sans-serif;
+font-weight:100;
+font-size:20px;
+color:#323232;
+text-transform: uppercase;
+text-shadow: 6px 5px #eee;
+z-index: 1;
+position: absolute;
+text-align: center;
+width: 100%;
+margin-top: 50%;
+}
+
+.hexItem a img:hover{
+opacity:0.2;
+-moz-opacity: 0.20;
+filter: alpha(opacity=20);
+}
+@media (min-width: 300px) and (max-width: 480px) {
+	.gap{
+	margin-left:0px;
+	}
+	.hexItem {
+    width: 84px;
+    height: 92px;
+    margin-right: 5px;
+    margin-bottom:0;
+	}
+	.hexItem strong{
+	font-size:14px;
+	margin-top: 40%;
+	}
+	.hexWrap {
+	max-width: 276px;
+	text-align: justify;
+	}	
+	.owl-theme .owl-controls {
+    margin: 0px 10px 11px 16px;
+	}
+}
+@media (min-width: 481px) and (max-width: 769px) {
+	.gap{
+	margin-left:0px;
+	}
+	.hexItem {
+	width: 111px;
+	height: 125px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	}
+	.hexItem strong{
+	font-size:14px;
+	margin-top: 40%;
+	}
+	.owl-carousel .owl-wrapper-outer {
+    max-width: 480px;
+	}
+	.hexWrap {
+	max-width: 480px;
+	text-align: justify;
+	}	
+}
+@media (min-width: 770px) and (max-width: 1023px) {
+	.gapT{
+	margin-left:24px;
+	}
+	.gap{
+	margin-left:100px;
+	}
+	.hexItem {
+	width: 139px;
+	height: 125px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	}
+	.hexItem strong{
+	font-size:14px;
+	margin-top: 40%;
+	}
+	.owl-carousel .owl-wrapper-outer {
+    max-width: 760px;
+	}
+	.hexWrap {
+	max-width: 760px;
+	
+	}	
+}
+
+/*----- Slider End------*/
+
+
+/*----- Intro Start------*/
+.introWrap{
+background-color: #2EB398;
+}
+.introWrap .intro{
+max-width:933px;
+margin:0 auto;
+padding: 67px 85px 50px 67px;
+}
+.intro .lSide, .intro .rSide{
+padding-right: 5px;
+padding-left: 5px;
+}
+.intro .rSide h2{
+margin-top: -6px;
+margin-bottom: 2px;
+font-family: 'Maven Pro', sans-serif;
+font-size: 30px;
+color: #fff;
+letter-spacing: -1px;
+}
+.intro .rSide h3 {
+color: #20816d;
+font-family: 'Maven Pro', sans-serif;
+font-size: 18px;
+margin-top: 0px;
+margin-left: 3px;
+letter-spacing: -0.3px;
+}
+.intro .rSide p {
+color: #FFF;
+font-size: 12px;
+font-family: 'Lato', sans-serif;
+margin-top: 13px;
+line-height: 1.8;
+margin-left: 2px;
+letter-spacing: 0.3px;
+}
+.socials {
+float: right;
+margin-top: 8px;
+margin-right: -4px;
+}
+.socials ul li{
+display:inline-block;
+list-style:none;
+margin-right: -4px;
+} 
+
+@media (min-width: 300px) and (max-width: 480px) {
+	.introWrap .intro{
+	padding: 10px 0px 10px 0px;
+	}
+	.introWrap .intro{
+	text-align: center;
+	}
+	.introWrap .intro .rSide h2{
+	padding-top:10px;
+	}
+	.introWrap .intro .rSide p{
+	text-align: left;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	.introWrap .intro{
+	padding: 20px 10px 20px 10px;
+	}
+	.introWrap .intro{
+	text-align: center;
+	}
+	.introWrap .intro .rSide h2{
+	padding-top:10px;
+	}
+	.introWrap .intro .rSide p{
+	text-align: left;
+	}
+}	
+@media (min-width: 620px) and (max-width: 768px) {
+	.introWrap .intro .lSide{
+	width: 34%;
+	float: left;
+	}
+}	
+@media (min-width: 769px) and (max-width: 1000px) {
+	.introWrap .intro .lSide img{
+	width:100%;
+	height:auto;
+	}
+}	
+/*----- Intro End------*/
+
+/*------Contact Start------ */
+.contactWrap{
+background-color: #323232;
+color:#e0e0e0;
+}
+.contactWrap .contact{
+max-width:933px;
+margin:0 auto;
+padding: 61px 85px 66px 62px;
+}
+.contactWrap .contact .col-sm-12{
+padding-left: 9px;
+}
+.contactWrap .contact .col-sm-9 {
+padding-right: 1px;
+padding-left: 8px;
+}
+.contactWrap .contact h2 {
+margin-top: 0px;
+margin-bottom: 0px;
+font-family: 'Maven Pro', sans-serif;
+font-size: 30px;
+font-weight: 100;
+letter-spacing: -0.39px;
+}
+.contactWrap .contact p {
+margin-top: -3px;
+font-family: 'Maven Pro', sans-serif;
+font-size: 18px;
+font-weight: 100;
+letter-spacing: -0.1px;
+margin-bottom: 18px;
+}
+.form-group {
+margin-bottom: 17px;
+}
+.form-control:focus {
+border-color: #2eb398;
+outline: 0px none;
+box-shadow:none;
+}
+.form-control {
+height: 37px;
+padding: 9px 29px;
+font-size:12px;
+font-family: 'Lato', sans-serif;
+line-height: 1.42857;
+color: #e0e0e0;
+background-color: #454545;
+border: 1px solid #454545;
+border-radius: 0px;
+box-shadow: none;
+transition: none;
+}
+textarea.form-control {
+height: 150px;
+}
+.btn {
+margin-top: -3px;
+background: #2eb398;
+border: none;
+border-radius: 0px;
+float: right;
+text-transform: uppercase;
+padding: 8px 21px;
+font-size:12px;
+font-family: 'Lato', sans-serif;
+font-weight:400;
+}
+.contact .rSide{
+padding-left:10px;
+}
+.contact .rSide p{
+font-family: 'Lato', sans-serif;
+font-size: 12px;
+line-height: 1.82;
+letter-spacing: 0.5px;
+margin-bottom: 19px;
+text-align: justify;
+}
+.contact .rSide ul li{
+list-style:none;
+font-size:12px;
+font-family: 'Lato', sans-serif;
+margin-bottom: 5px;
+}
+.contact .rSide ul li strong{
+color: #2eb398;
+padding-right: 10px;
+font-size: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+	.contactWrap .contact{
+	padding: 10px 0px 10px 0px;
+	}
+	.contact .rSide{
+	padding-left:5px;
+	clear: both;
+	}
+	.contact .rSide p{
+	margin-top: 65px;
+	text-align: left;
+	}
+	textarea.form-control {
+	height: auto;
+	}
+	.contactWrap .contact h2 {
+    font-size: 25px;
+	}
+	.contactWrap .contact p {
+    font-size: 14px;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	.contactWrap .contact{
+	padding: 20px 10px 20px 10px;
+	}
+	.contact .rSide{
+	padding-left:5px;
+	clear: both;
+	}
+		.contact .rSide p{
+	margin-top: 65px;
+	}
+}
+/*------Contact End------ */
+.footerWrap{
+background:#222222;
+color:#454545;
+font-size:12px;
+font-family: 'Maven Pro', sans-serif;
+text-align:center;
+}
+.footerWrap p{
+padding: 10px 0 10px 30px;
+margin-bottom: 0;
+}
+.footerWrap p a{
+color:#E0E0E0;
+}
+.footerWrap p a:hover{
+color:#2eb398;
+text-decoration:none;
+}
+
+
+
+.main-slider{
+	
+}
+.main-slider .item{
+	
+}
+.main-slider .item .overlay{
+	background-color: #00000075;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.main-slider .item .itemText{
+	position:absolute;
+	top:150px;
+	left:100px;
+}
+.main-slider .item .itemText h1{
+	font-family: TiroBangla;
+	letter-spacing: 20px;
+	font-size:50px;
+	color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.main-slider .item .itemText h1 span{
+	font-family: TiroBangla;
+	letter-spacing: 80px;
+	font-size: 100px;
+	display:block;
+	border-bottom: solid 1px #fff;
+}
+.main-slider .item .itemText p{
+	color: #fff;
+}
+.main-slider .item .itemText a{
+	transition: all 0.2s ease-in-out 0s;
+	border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.main-slider .item .itemText a:hover, .main-slider .item .itemText a:hover {
+    text-decoration: none;
+	background-color:#fff;
+	color:#000;
+	
+}
+.owl-theme .owl-controls {	
+	margin: 0 auto;
+    position: ABSOLUTE;
+    width: 100%;
+    bottom: 135px;
+    border-bottom: 0;	
+	text-align:center;
+}
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: none repeat scroll 0% 0% #ddd2c5;
+}
+.sliderWrapper .down-nav{
+	bottom: 45px;
+    width: 76px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}	
+.sliderWrapper .down-nav img{
+    width: 76px;
+    height: auto;
+}
+

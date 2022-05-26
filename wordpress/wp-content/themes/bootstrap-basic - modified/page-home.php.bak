@@ -1,0 +1,214 @@
+<?php
+/**
+/*
+*Template Name: Home Page
+ * 
+ * @package bootstrap-basic
+ */
+
+get_header();
+
+/**
+ * determine main column size from actived sidebar
+ */
+ ?>
+	<!--Slider Start-->
+	<div class="container sliderWrapper">
+		<div id="owl-demo" class="owl-carousel">
+            <div class="item">
+				<ul class="hexWrap">
+					<li class="hexItem gap">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex2.png"></a>
+					<strong>Project two</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex3.png"></a>
+					<strong>Project three</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex4.png"></a>
+					<strong>Project four</strong>
+					</li>
+					<li class="hexItem gapT">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex5.png"></a>
+					<strong>Project five</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex6.png"></a>
+					<strong>Project six</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex2.png"></a>
+					<strong>Project two</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex3.png"></a>
+					<strong>Project three</strong>
+					</li>
+					<li class="hexItem gap">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex4.png"></a>
+					<strong>Project four</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex5.png"></a>
+					<strong>Project five</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex6.png"></a>
+					<strong>Project six</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+				</ul>
+			</div>
+            <div class="item">
+				<ul class="hexWrap">
+					<li class="hexItem gap">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex2.png"></a>
+					<strong>Project two</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex3.png"></a>
+					<strong>Project three</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex4.png"></a>
+					<strong>Project four</strong>
+					</li>
+					<li class="hexItem gapT">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex5.png"></a>
+					<strong>Project five</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex6.png"></a>
+					<strong>Project six</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex2.png"></a>
+					<strong>Project two</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex3.png"></a>
+					<strong>Project three</strong>
+					</li>
+					<li class="hexItem gap">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex4.png"></a>
+					<strong>Project four</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex5.png"></a>
+					<strong>Project five</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex6.png"></a>
+					<strong>Project six</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+				</ul>
+			</div>
+            <div class="item">
+				<ul class="hexWrap">
+					<li class="hexItem gap">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex2.png"></a>
+					<strong>Project two</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex3.png"></a>
+					<strong>Project three</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex4.png"></a>
+					<strong>Project four</strong>
+					</li>
+					<li class="hexItem gapT">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex5.png"></a>
+					<strong>Project five</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex6.png"></a>
+					<strong>Project six</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex2.png"></a>
+					<strong>Project two</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex3.png"></a>
+					<strong>Project three</strong>
+					</li>
+					<li class="hexItem gap">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex4.png"></a>
+					<strong>Project four</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex5.png"></a>
+					<strong>Project five</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex6.png"></a>
+					<strong>Project six</strong>
+					</li>
+					<li class="hexItem">
+					<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/hex1.png"></a>
+					<strong>Project one</strong>
+					</li>
+				</ul>
+			</div>
+        </div>
+	</div>
+	<!--Slider End-->
+	<!--Intro Start-->
+	<div class="container-fluid introWrap">
+		<div class="row intro">
+			<div class="col-sm-3 lSide">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/introImage.png">
+			</div>
+			<div class="col-sm-9 rSide">
+				<h2>Smith Anderson</h2>
+				<h3>Illustrator & Character Designer</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna. Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna
+				</p>
+				<div class="socials">
+					<ul>
+						<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/google.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/pinterest.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/linkedin.png"></a></li>
+						<li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/dribble.png"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-Intro End->
+<?php get_footer(); ?> 
